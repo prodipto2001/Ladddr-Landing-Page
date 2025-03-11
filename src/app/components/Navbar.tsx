@@ -1,6 +1,8 @@
 "use client"
 import Link from 'next/link'
 import { useState } from 'react'
+import MintButton from "./MintButton";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -29,11 +31,7 @@ const Navbar = () => {
                 <div className="text-center justify-start text-[#373737] text-lg font-normal font-['Space_Grotesk'] capitalize">Services</div>
               </div>
             </div>
-            <div className="w-[179px] h-10 pb-px bg-[#5b43dd] rounded-[100px] outline-1 outline-[#5b43dd] inline-flex flex-col justify-start items-start gap-2.5">
-              <div className="self-stretch h-10 flex-1 p-4 bg-[#8a76f3] rounded-[100px] shadow-[inset_0px_-1px_5.099999904632568px_0px_rgba(114,89,243,0.06)] shadow-[inset_0px_1px_0.5px_0px_rgba(216,197,255,0.29)] inline-flex justify-center items-center gap-2.5">
-                <div className="justify-start text-[#faf9fe] text-base font-bold font-['Space_Grotesk']">Mint your Project</div>
-              </div>
-            </div>
+            <MintButton />
           </div>
         </div>
 
