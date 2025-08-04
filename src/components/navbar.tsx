@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import * as React from "react";
 import MintButton from "./mint-button";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
 
   // Handle scroll effect for navbar
-  useEffect(() => {
+  React.useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };

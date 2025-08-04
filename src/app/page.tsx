@@ -1,12 +1,12 @@
 import Image from "next/image";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
     <div className="fixed inset-0 overflow-hidden bg-white">
       {/* Background Image */}
-      
+
       {/* Bottom Background Image */}
       <div className="absolute -bottom-200 left-0 right-0 z-0 transform translate-y-1/4 sm:translate-y-1/5 md:translate-y-1/6 lg:translate-y-1/8">
         <Image
@@ -18,7 +18,7 @@ export default function Home() {
           priority
         />
       </div>
-      
+
       {/* Content Container - Adjusted for responsive padding */}
       <div className="relative z-20 h-full px-4 sm:px-6 md:px-12 lg:px-24 xl:px-[180px]">
         <Navbar />
