@@ -1,7 +1,8 @@
 "use client";
+
 import Link from "next/link";
 import * as React from "react";
-import MintButton from "./mint-button";
+import MintButton from "@/components/mint-button";
 
 const Navbar = () => {
   const [, setIsScrolled] = React.useState(false);
