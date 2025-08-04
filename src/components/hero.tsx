@@ -1,4 +1,4 @@
-import MintButton from "./MintButton";
+import MintButton from "./mint-button";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
           <p className="text-center text-[#373737] text-2xl md:text-3xl lg:text-4xl font-bold px-4 mb-8">
             NO CAP. NO MID. JUST VIBES.
           </p>
-          
+
           {/* Button - Closer to the text */}
           <div className="w-full flex justify-center">
             <MintButton />
@@ -29,23 +29,34 @@ const Hero = () => {
           <div className="w-full md:w-[80vw] lg:w-[60vw] max-w-full flex flex-col md:flex-row justify-between gap-6 px-4">
             {/* Unique stats with custom copy */}
             <div className="p-4 md:p-6 bg-[#ded8ff]/60 rounded-3xl backdrop-blur-[2px] flex justify-start items-center gap-3 w-full md:w-auto">
-              <div className="text-center text-[#5b43dd] text-3xl md:text-4xl font-bold capitalize">500+</div>
+              <div className="text-center text-[#5b43dd] text-3xl md:text-4xl font-bold capitalize">
+                500+
+              </div>
               <div className="text-[#5b43dd] text-xl md:text-2xl font-normal uppercase tracking-wide">
-                Screens<br/>Designed
+                Screens
+                <br />
+                Designed
               </div>
             </div>
-            
+
             <div className="p-4 md:p-6 bg-[#ded8ff]/60 rounded-3xl backdrop-blur-[2px] flex justify-start items-center gap-3 w-full md:w-auto">
-              <div className="text-center text-[#5b43dd] text-3xl md:text-4xl font-bold capitalize">5+</div>
+              <div className="text-center text-[#5b43dd] text-3xl md:text-4xl font-bold capitalize">
+                5+
+              </div>
               <div className="text-[#5b43dd] text-xl md:text-2xl font-normal uppercase tracking-wide">
-                Clients &<br/>Partnership
+                Clients &<br />
+                Partnership
               </div>
             </div>
-            
+
             <div className="p-4 md:p-6 bg-[#ded8ff]/60 rounded-3xl backdrop-blur-[2px] flex justify-start items-center gap-3 w-full md:w-auto">
-              <div className="text-center text-[#5b43dd] text-3xl md:text-4xl font-bold capitalize">20+</div>
+              <div className="text-center text-[#5b43dd] text-3xl md:text-4xl font-bold capitalize">
+                20+
+              </div>
               <div className="text-[#5b43dd] text-xl md:text-2xl font-normal uppercase tracking-wide">
-                Projects<br/>Delivered
+                Projects
+                <br />
+                Delivered
               </div>
             </div>
           </div>
