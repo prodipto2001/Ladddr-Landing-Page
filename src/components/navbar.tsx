@@ -4,7 +4,7 @@ import * as React from "react";
 import MintButton from "./mint-button";
 
 const Navbar = () => {
-  const [isScrolled, setIsScrolled] = React.useState(false);
+  const [, setIsScrolled] = React.useState(false);
 
   // Handle scroll effect for navbar
   React.useEffect(() => {
