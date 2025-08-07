@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className="relative z-0 container mx-auto px-4 h-[calc(100vh-80px)] flex flex-col justify-center items-top overflow-hidden">
       {/* Main Content Section */}
-      <div className="mx-auto flex flex-col items-center flex-grow justify-center">
+      <div className="mx-auto flex flex-col items-center flex-grow justify-center pb-16 sm:pb-0">
         {/* Hero Content Group - Packed closely together */}
         <div className="flex flex-col items-center mb-10">
           {/* Hero Title */}
