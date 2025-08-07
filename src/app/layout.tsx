@@ -1,5 +1,6 @@
 import { Space_Grotesk } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
+import type { Metadata } from "next";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -7,12 +8,18 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export const metadata: Metadata = {
+  title: "Ladddr",
+  description: "Based design for a tokenized world",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html
-      lang="en"
-      className={spaceGrotesk.className}
-    >
+    <html lang="en" className={spaceGrotesk.className}>
       <body>{children}</body>
     </html>
   );

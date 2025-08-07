@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-transparent py-4 px-6">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
+      <div className="max-w-[100ch] mx-auto flex justify-between items-center">
         {/* Logo/Brand */}
         <div className="flex-shrink-0">
           <Link
@@ -31,7 +31,7 @@ const Navbar = () => {
         </div>
 
         {/* Only showing MintButton */}
-        <div>
+        <div className="hidden md:inline-block">
           <MintButton />
         </div>
       </div>
