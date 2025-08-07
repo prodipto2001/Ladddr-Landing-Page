@@ -13,13 +13,12 @@ export const metadata: Metadata = {
   description: "Based design for a tokenized world",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={spaceGrotesk.className}>
+    <html
+      lang="en"
+      className={spaceGrotesk.className}
+    >
       <body>{children}</body>
     </html>
   );
